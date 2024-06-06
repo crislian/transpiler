@@ -1,13 +1,13 @@
 circuit qc1 {
-    u3() 2;
+    x 2;
     u2q(#2) 3 7;
 }
 
-circuit<12> qc2() {
+circuit<12> qc2 {
     u3(#3) 0;
 }
 
-circuit qc3(theta[10]) {
+circuit qc3 {
     u3(#4) 0;
 }
 
