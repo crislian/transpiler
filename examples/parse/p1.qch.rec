@@ -1,5 +1,5 @@
-circuit<nqubits=4, nparams=0> qc1 {
-  u1q(%0 %1 %2) 2
-@ h 3;
+circuit<nqubits=3, nparams=0> qc1 {
+  u1q(%0 %1 %2) 2;
+  h 2;
 }
 
