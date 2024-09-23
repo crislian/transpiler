@@ -1,0 +1,6 @@
+circuit<nqubits=2, nparams=0> qc1 {
+  rz(%0) 0;
+  rz(%0) 1;
+  cx 0 1;
+}
+

@@ -1,6 +1,5 @@
-circuit<nqubits=3, nparams=0> qc1 {
+circuit<nqubits=4, nparams=0> qc1 {
   u1q(%0,%1,%2) 2;
-  u1q(#0) 2;
+  cx 2 3;
 }
 
-#0 = { cos%0, -i*sin%0, i*sin(%0+%2), cos%0 }
