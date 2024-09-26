@@ -1,5 +1,0 @@
-circuit<nqubits=4, nparams=0> qc1 {
-  u1q(%0,%1,%2) 2;
-  cx 2 3;
-}
-
