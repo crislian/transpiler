@@ -1,5 +1,6 @@
 circuit qc1 {
  rz(%0) 0;
+ rz(%1) 1;
 }
 
 // #0 = { cos%0 , -i*sin%0, i*sin(%0+%2), cos%0 }

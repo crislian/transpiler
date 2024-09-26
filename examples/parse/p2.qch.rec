@@ -1,3 +1,0 @@
-circuit<nqubits=0, nparams=0> qc1 {
-  rz(%0) 0;
-
