@@ -1,0 +1,4 @@
+circuit qc1 {
+  x 0;
+  cx 0 1;
+}
