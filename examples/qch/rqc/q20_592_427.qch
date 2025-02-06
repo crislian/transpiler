@@ -1,4 +1,4 @@
-circuit<nqubits=20, nparams=0> qc {
+circuit<nQubits=20, nparams=0> qc {
   u1q(0, 0, -0.7853981633974483) 0;
   u1q(0, 0, 1.285512333751946) 1;
   u1q(0, 0, -0.4125049863105691) 3;
