@@ -41,7 +41,7 @@ public:
   /// compare case-insensitive
   int compare_ci(StringRef other) const;
 
-  constexpr operator std::string() const {
+  operator std::string() const {
     return std::string(_bufferBegin, _length);
   }
 

@@ -2,6 +2,7 @@
 #define UTILS_VECTOR_H
 
 #include "utils/is_pod.h"
+#include <cstring>
 #include <cassert>
 #include <memory>
 #include <iostream>
@@ -47,7 +48,7 @@ public:
     : _data(_allocate(other.capacity()))
     , _capacity(other._capacity)
     , _size(other._size) {
-    ::memcpy(_data, other._data, other.sizeInBytes());
+    std::memcpy(_data, other._data, other.sizeInBytes());
   }
 
   PODVector(PODVector&& other) noexcept
@@ -133,7 +134,7 @@ public:
     if (capacity <= _capacity)
       return;
     T* newData = _allocate(capacity);
-    ::memcpy(newData, _data, sizeInBytes());
+    std::memcpy(newData, _data, sizeInBytes());
     ::operator delete(_data);
     _data = newData;
     _capacity = capacity;

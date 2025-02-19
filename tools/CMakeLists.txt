@@ -28,6 +28,7 @@ endif()
 
 add_executable(scratch "scratch.cpp")
 target_link_libraries(scratch utils cast simulation timeit)
+target_link_libraries(scratch util qasm saot simulation)
 
 add_executable(fpga_playground "fpga_playground.cpp")
 target_link_libraries(fpga_playground qasm cast simulation)

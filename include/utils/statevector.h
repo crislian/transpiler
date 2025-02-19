@@ -1,6 +1,7 @@
 #ifndef UTILS_STATEVECTOR_H
 #define UTILS_STATEVECTOR_H
 
+#include <algorithm>
 #include <memory>
 #include <complex>
 #include <iostream>
@@ -297,7 +298,7 @@ public:
          << "statevector has more than 5 qubits, "
             "only the first 32 entries are shown.\n";
     }
-    for (size_t i = 0; i < std::min(32ULL, N); i++) {
+    for (size_t i = 0; i < std::min<size_t>(32ULL, N); i++) {
       os << i << ": ";
       utils::print_complex(os, {real(i), imag(i)}, 8);
       os << "\n";

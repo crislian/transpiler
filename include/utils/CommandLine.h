@@ -4,6 +4,7 @@
 #include "utils/StringRef.h"
 #include "utils/PODVector.h"
 #include "utils/iocolor.h"
+#include <vector>
 
 namespace utils::cl {
 
